@@ -16,7 +16,7 @@ jobs:
       - run:  npm run build --configuration-production
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: dist/jeannine-christin/
+          path: dist/jeannine-christin/browser
 
   deploy:
     needs: build
