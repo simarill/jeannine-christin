@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "jeannine-christin-buchmann": {
+    "jeannine-christin": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "jeannine-christin-buchmann:build:production"
+              "buildTarget": "jeannine-christin:build:production"
             },
             "development": {
-              "buildTarget": "jeannine-christin-buchmann:build:development"
+              "buildTarget": "jeannine-christin:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "jeannine-christin-buchmann:build"
+            "buildTarget": "jeannine-christin:build"
           }
         },
         "test": {
