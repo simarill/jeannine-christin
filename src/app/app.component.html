@@ -1,20 +1,33 @@
-<nav>
-  <a class="button" routerLink="" routerLinkActive="activebutton">Home</a> |
-  <a class="button" routerLink="/about" routerLinkActive="activebutton">Über mich</a> |
-</nav>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="">Jeannine Christin</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand" href="">
+      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      Jeannine Christin
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="" routerLinkActive="activebutton">Home</a>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item nav-text">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item nav-text">
+          <a class="nav-link" href="/angebote">Angebote</a>
+        </li>
+        <li class="nav-item nav-text">
+          <a class="nav-link" href="/cranio">Cranio</a>
+        </li>
+        <li class="nav-item nav-text">
+          <a class="nav-link" href="/ayurveda">Ayurveda</a>
+        </li>
+        <li class="nav-item nav-text">
+          <a class="nav-link" href="/about">Über mich</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/about" routerLinkActive="activebutton">Über mich</a>
+          <a class="nav-link" href="https://calendly.com/jeanninechristin/termin">
+            <button type="button" class="btn btn-outline-secondary">Termine buchen</button>
+          </a>
         </li>
       </ul>
     </div>
