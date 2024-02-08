@@ -1,0 +1,80 @@
+
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  @media (max-width: 1215px) {
+    font-size: medium;
+  } 
+}
+
+.nav-left {
+  @media (max-width: 575px) {
+    font-size: smaller;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    @media (max-width: 991px) {
+      flex-direction: row;
+      
+      img {
+        margin-right: 20px;
+      }
+    }
+  }
+  // Medium devices (tablets)
+  @media (min-width: 992px) {
+    display: none;
+  }
+}
+
+.nav-middle {
+  // Medium devices (tablets)
+  @media (max-width: 991px) {
+    display: none;
+  }
+
+  margin-left: 40px;
+  margin-right: 40px;
+  
+}
+
+nav {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+
+  .btn {
+      font-weight: bold;
+  }
+
+  .nav-text {
+      padding-top: 8px;
+  }
+
+  .nav-item {
+    padding-left: 22px;
+    padding-right: 22px;
+
+    @media (max-width: 1215px) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }      
+  }
+}
+
+img {
+  filter: sepia(100%);
+  filter: invert(84%) sepia(40%) saturate(2936%) hue-rotate(359deg) brightness(104%) contrast(107%);
+}
